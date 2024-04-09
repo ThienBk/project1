@@ -1,19 +1,106 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
-<link rel="shortcut icon" href="favicon.png" type="image/png">
-<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trạm Y tế xã Thịnh Hưng</title>
+    <style>
+        /* CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-Your body goes here!...😇😇😇😇
+    <header>
+        <h1>Trạm Y tế xã Thịnh Hưng</h1>
+    </header>
+    <div class="container" id="container">
+        <section>
+            <img src="header_image.jpg" alt="Header Image">
+            <h2>Thông tin cơ bản</h2>
+            <div class="contact-info">
+                <p><strong>Tên cơ sở:</strong> Trạm y tế xã Thịnh Hưng</p>
+                <p><strong>Trực thuộc:</strong> Trung tâm y tế huyện Yên Bình</p>
+                <p><strong>Địa chỉ:</strong> Km19, quốc lộ 70, xã Thịnh Hưng, huyện Yên Bình, tỉnh Yên Bái</p>
+                <p><strong>Trưởng trạm:</strong> Bác sĩ Hà Thị Vân Quỳnh</p>
+                <p><strong>Điện thoại:</strong> 0947 998 065</p>
+                <p><strong>Email:</strong> tytthinhhingyb@gmail.com</p>
+            </div>
+        </section>
+        <section>
+            <h2>Quá trình hình thành và phát triển</h2>
+            <p>... (Nội dung quá trình hình thành và phát triển của trạm y tế)</p>
+        </section>
+        <section>
+            <h2>Cơ cấu tổ chức</h2>
+            <p>... (Nội dung cơ cấu tổ chức của trạm y tế)</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Trạm Y tế xã Thịnh Hưng - Yên Bái</p>
+    </footer>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const container = document.getElementById('container');
+            const distanceFromTop = container.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (distanceFromTop < windowHeight / 1.2) {
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            } else {
+                container.style.opacity = '0';
+                container.style.transform = 'translateY(50px)';
+            }
+        });
+    </script>
 </body>
 </html>
