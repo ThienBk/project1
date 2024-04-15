@@ -110,15 +110,15 @@ function toggleText() {
     }
   }
 function toggleTextHD() {
-    var text = document.getElementById("moreTextHD");
-    var button = document.getElementById("myButtonHD");
+    var text1 = document.getElementById("moreTextHD");
+    var button1 = document.getElementById("myButtonHD");
   
-    if (text.style.display === "none") {
-      text.style.display = "inline";
-      button.textContent = "Thu gọn";
+    if (text1.style.display === "none") {
+      text1.style.display = "inline";
+      button1.textContent = "Thu gọn";
     } else {
-      text.style.display = "none";
-      button.textContent = "Đọc thêm";
+      text1.style.display = "none";
+      button1.textContent = "Đọc thêm";
     }
   }
 
