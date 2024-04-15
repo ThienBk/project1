@@ -93,6 +93,35 @@
         }
     });
 
+      
     
 })(jQuery);
 
+function toggleText() {
+    var text = document.getElementById("moreText");
+    var button = document.getElementById("myButton");
+  
+    if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.textContent = "Thu gọn";
+    } else {
+      text.style.display = "none";
+      button.textContent = "Đọc thêm";
+    }
+  }
+function toggleTextHD() {
+    var text = document.getElementById("moreTextHD");
+    var button = document.getElementById("myButtonHD");
+  
+    if (text.style.display === "none") {
+      text.style.display = "inline";
+      button.textContent = "Thu gọn";
+    } else {
+      text.style.display = "none";
+      button.textContent = "Đọc thêm";
+    }
+  }
+
+
+ 
+  
