@@ -12,6 +12,10 @@
     display: none;
 }
 
+#moreTextHD2 {
+    display: none;
+}
+
 .fw-medium {
     font-weight: 500 !important;
 }

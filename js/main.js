@@ -121,6 +121,18 @@ function toggleTextHD() {
       button1.textContent = "Đọc thêm";
     }
   }
+function toggleTextHD2() {
+    var text2 = document.getElementById("moreTextHD2");
+    var button2 = document.getElementById("myButtonHD2");
+  
+    if (text2.style.display === "none") {
+      text2.style.display = "inline";
+      button2.textContent = "Thu gọn";
+    } else {
+      text2.style.display = "none";
+      button2.textContent = "Đọc thêm";
+    }
+  }
 
 
  
