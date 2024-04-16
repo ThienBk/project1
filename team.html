@@ -105,7 +105,7 @@
         <a
           href="appointment.html"
           class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-          >Đặt lịch<i class="fa fa-arrow-right ms-3"></i
+          >Đặtg lịch<i class="fa fa-arrow-right ms-3"></i
         ></a>
       </div>
     </nav>
@@ -121,10 +121,10 @@
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb text-uppercase mb-0">
             <li class="breadcrumb-item">
-              <a class="text-black" href="#">Trang chủ</a>
+              <a class="text-white" href="#">Trang chủ</a>
             </li>
             <li class="breadcrumb-item">
-              <a class="text-black" href="#">Trang</a>
+              <a class="text-white" href="#">Trang</a>
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
               Về chúng tôi
@@ -250,21 +250,23 @@
       <h6>Cúm A là gì?</h6>
       <p>
         Trong Quyết định số 2762/QĐ-BYT về việc ban hành Hướng dẫn chẩn đoán,
-        điều trị và phòng lây nhiễm cúm A số 2762/QĐ-BYT nêu rằng. Cúm A là một
+        điều trị và phòng lây nhiễm cúm A số 2762/QĐ-BYT nêu rằng... 
+        <span id="moreTextCumA">
+          Cúm A là một
         loại bệnh nhiễm trùng đường hô hấp cấp tính do các virus cúm mùa gây nên
-        các chủng cúm A phổ biến là A/H1N1, A/H3N2...
+        các chủng cúm A phổ biến là A/H1N1, A/H3N2...<br>
+            Cúm A lây từ người sang người qua các giọt bắn khi bệnh nhân hắt hơi, ho
+            hoặc giao tiếp hàng ngày. Căn bệnh này còn có thể lây từ động vật, cụ
+            thể là gia cầm như gà, vịt ...<br>
+            Việc nhận biết sớm các triệu chứng của cúm A rất khó phân biệt với các
+            đường hô hấp khác việc chẩn đoán điều trị phải tuân thủ theo hướng dẫn
+            của cơ sở y tế gần nhất để thăm khám kịp thời, tránh các biến chứng nguy
+            hiểm.
+        </span>
       </p>
-      <p>
-        Cúm A lây từ người sang người qua các giọt bắn khi bệnh nhân hắt hơi, ho
-        hoặc giao tiếp hàng ngày. Căn bệnh này còn có thể lây từ động vật, cụ
-        thể là gia cầm như gà, vịt ...
-      </p>
-      <p>
-        Việc nhận biết sớm các triệu chứng của cúm A rất khó phân biệt với các
-        đường hô hấp khác việc chẩn đoán điều trị phải tuân thủ theo hướng dẫn
-        của cơ sở y tế gần nhất để thăm khám kịp thời, tránh các biến chứng nguy
-        hiểm.
-      </p>
+
+    <button id="myButtonCumA" onclick="toggleTextCumA()">Đọc thêm</button>
+      
       <p>
         Cách phòng bệnh cúm, hãy tiêm vaccine phòng tránh cúm A, ăn uống đủ chất
         tăng sức đề kháng, luôn giữ ấm cơ thể, thường xuyên rửa tay xà phòng và
