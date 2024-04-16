@@ -133,7 +133,18 @@ function toggleTextHD2() {
       button2.textContent = "Đọc thêm";
     }
   }
-
+function toggleTextCumA() {
+    var text3 = document.getElementById("moreTextCumA");
+    var button3 = document.getElementById("myButtonCumA");
+  
+    if (text3.style.display === "none") {
+      text3.style.display = "inline";
+      button3.textContent = "Thu gọn";
+    } else {
+      text3.style.display = "none";
+      button3.textContent = "Đọc thêm";
+    }
+  }
 
  
   
